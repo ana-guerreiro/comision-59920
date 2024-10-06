@@ -1,0 +1,1111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Header*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+/*    min-height: 100px;*/
+    overflow-x: hidden;
+    padding: 0 20px;
+    box-sizing: border-box;
+    z-index: 1000;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: white;
+}
+
+.logoAndIcons{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.socialMedia{
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    gap: 10px;
+}
+
+.navBar ul{
+    display: flex;
+    flex-direction:row;
+    background-color: white;
+    align-items: center;
+    color: black;
+    font-family:"area-normal",sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size: 25px;
+    }
+
+.navBar ul li{
+    list-style:none;
+    margin-left: 20px;
+}
+
+.navBar ul li a{
+    text-decoration: none;
+    color: black;
+    transition: font-weight 0.3s;
+}
+
+.navBar ul li a:hover{
+    font-weight: bold;
+}
+
+
+/*Footer*/
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    border-top: 1px solid black;
+    align-items: flex-end;
+    padding: 0 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.infoEstudio{
+    box-sizing: border-box;
+    color: black;
+    font-family:"area-normal",sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    align-items: end;
+}
+
+.btnHablemos{
+    display:flex;
+    align-items:center;
+    justify-content: flex-end;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    box-sizing: border-box;
+}
+
+.btnHablemos a{
+    color: black;
+    display: inline-block;
+    text-decoration: none;
+    background: transparent;
+    text-align:center;
+    padding: 10px 20px;
+    width: auto;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 100px;
+    text-decoration: none;
+    font-family:"area-normal",sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+/*Landing Pagina*/
+
+.sectionImage{
+    background-image: url(../assets/img/landingImage.png);
+    background-position: center;
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    justify-content:center;
+    padding: 60px 20px;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    }
+
+.sectionImage h1{
+    font-size: 64px;
+    font-family:"area-extended",sans-serif;
+    font-weight: normal;
+    text-align: right;
+    color: white;
+    /*position: relative;*/
+    padding: 20px;
+}
+
+.sectionImage div a{
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    background: transparent;
+    text-align:center;
+    width: auto;
+    height: auto;
+    /*width: 280px;
+    height: 47px;*/
+    border: 2px solid white;
+    border-radius: 100px;
+    font-family:"area-normal",sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    justify-content: center;
+    padding: 10px 20px;
+}
+
+.divDise{
+    color: black;
+    text-align:center;
+    font-size: 25px;
+    font-family:"area-normal",sans-serif;
+    font-style: normal;
+    padding: 20px;
+}
+
+.serviciosLanding{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 10px;
+}
+
+.nuestrosServicios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding-top: 30px;
+}
+
+
+.nuestrosServicios a{
+    color: black;
+    text-decoration: none;
+    background: transparent;
+    text-align:center;
+    padding: 10px 20px;
+    width: auto;
+    height: auto;
+    border: 3px solid;
+    border-color: black;
+    border-radius: 100px;
+    font-family:"area-normal",sans-serif;
+    font-style: normal;
+    font-weight:bold;
+    font-size: 20px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.enriqueciendoTotal{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    padding: 60px;
+}
+
+.enriqueciendoTotal div img{
+    width: auto;
+    height: auto;
+    display:block;
+    margin: 0 auto;
+}
+
+.enriqueciendo{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px;
+    width: 100%;
+}
+
+.enriqueciendo h2{
+    align-items: baseline;
+    font-family:"area-extended",sans-serif;
+    font-style: normal;
+    font-size: 40px;
+    font-weight: normal;
+    margin:0;
+}
+
+.enriqueciendo p{
+    font-family:"area-normal",sans-serif;
+    font-style: normal;
+    text-align: justify;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+
+.botonesPN{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 60px;
+}
+
+.botonesPN a{
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    text-align:center;
+    padding: 10px 20px;
+    border: 2px solid;
+    border-color: black;
+    border-radius: 100px;
+    font-family:"area-normal",sans-serif;
+    font-style: bold;
+    font-size: 20px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.comprometidos{
+    padding: 40px;
+    text-align: center;
+}
+
+.comprometidos h3{
+    font-family:"area-extended",sans-serif;
+    font-style: normal;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.comprometidosParent{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.comprometidosParent img{
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.comprometidosParent div {
+    width: 50%;
+    padding-left:20px;
+    text-align: justify;
+}
+
+.comprometidosParent div p {
+    font-family:"area-normal",sans-serif;
+    font-style: normal;
+    text-align: justify;
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom:20px;
+}
+
+
+/*Servicios Pagina*/
+
+.bannerServicios{
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.bannerServicios img{
+    width: 100%;
+    height: auto;
+}
+
+.serviciosDescripcion{
+    text-align: center;
+    margin: 30px;
+    padding: 30px;
+}
+
+.serviciosDescripcion p {
+    width: 100%;
+    font-family: "area-normal", sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: justify;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: black;
+}
+
+.serviciosIndex{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    width: 100%;
+    gap: 20px;
+    padding: 10px;
+    grid-template-areas:  
+        "Servicios1 Servicios2"
+        "Servicios3 Servicios4";
+    margin: 0 auto;
+    justify-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.serviciosIndex div{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.serviciosIndex div:hover{
+    transform: scale(1.1);
+}
+
+.Servicios1 {
+    grid-area: Servicios1;
+}
+
+.Servicios2 {
+    grid-area: Servicios2;
+}
+
+.Servicios3 {
+    grid-area: Servicios3;
+}
+
+.Servicios4 {
+    grid-area: Servicios4;
+}
+
+.serviciosIndex h2{
+    color: black;
+    display: inline-block;
+    text-decoration: none;
+    background: transparent;
+    padding: 10px 20px;
+    width: auto;
+    height: auto;
+    font-family: "area-normal", sans-serif;
+    font-weight: normal;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+
+
+/* Nosotros Pagina*/
+.bannerEquipo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.equipoLanders {
+padding: 20px;
+display: flex;
+align-items: flex-start;
+text-align: center;
+flex-wrap: wrap;
+gap: 20px;
+margin-top: 40px;
+margin-bottom: 40px;
+}
+
+.equipoLanders h1{
+    font-family:"area-extended",sans-serif;
+    font-style: normal;
+    font-size: 40px;
+    font-weight: normal;
+    margin-left: 50px;
+}
+
+.equipoLanders p{
+    width: 70%;
+    margin: 0 auto;
+    font-family:"area-normal",sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: justify;
+}
+
+.arqCoo {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.arqCoo article {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+    width: 45%;
+    box-sizing: border-box;
+}
+
+.arqCoo img {
+    width: 641px;
+    height: 734px;
+    object-fit: cover;
+}
+
+.arqCoo h2 {
+    margin: 0;
+    font-family:"area-extended",sans-serif;
+    font-style: normal;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.arqCoo p {
+    margin: 0;
+    font-family:"area-extended",sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.restTeam {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: center;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+
+.restTeam article {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+    width: 30%;
+    box-sizing: border-box;
+}
+
+.restTeam img {
+    width: 641px;
+    height: 734px;
+    object-fit: cover;
+}
+
+.restTeam h2 {
+    font-family:"area-extended",sans-serif;
+    font-style: normal;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.restTeam p {
+    font-family:"area-extended",sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.descrubreS {
+    padding: 40px;
+    text-align: end;
+}
+
+.descrubreS a {
+    font-family: "area-extended", sans-serif;
+    font-size: 32px;
+    margin: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.descrubreS img {
+    width: 32px;
+    height: auto;
+    align-items:center;
+}
+
+
+
+/*Proyecto Pagina*/
+
+.projectBackground{
+    background-image: url(../assets/img/diadema-base.jpg);
+    background-position: center;
+    background-size:cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.projectList{
+    background-color: white;
+    width: 301px;
+    height: 616px;
+    display: flex;
+    margin-left: 20px;
+    align-items: flex-start;
+    justify-content: center;
+    font-family:"area-normal",sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    position: absolute;
+    top: 20%;
+    left: 50px;
+    padding: 30px;
+    margin-bottom: 20%;
+}
+
+.projectList ul{
+    list-style:none;
+}
+
+.projectList ul li a{
+text-decoration: none;
+color: black;
+display: inline-block;
+transition: transform 0.2s ease-in-out;
+}
+
+.projectList ul li a:hover{
+    transform: scale(1.05);
+}
+
+
+/*PRJ Silos Pagina*/
+
+.seccionPrincipal div img{
+    display:block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.projectDivision{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.project-info {
+    text-align: left; 
+    width: 50%;
+    margin: 40px;
+}
+
+.project-info p {
+    margin: 5px 0;
+    font-family: "area-extended", sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.project-description {
+    margin-bottom: 20px;
+    padding: 0 40px;
+    box-sizing: border-box;
+    margin-top: 40px;
+}
+
+.project-description p {
+    margin: 10px 0;
+    font-family: "area-normal", sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: justify;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.izquierda img{
+    display:block;
+    margin: 0 auto;
+    width: 90%;
+    margin-left: 40px;
+    margin-bottom: 40px
+}
+
+.derecha img{
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+
+.proximoProyecto{
+    padding: 40px;
+    text-align: end;
+}
+
+.proximoProyecto a {
+    font-family: "area-extended", sans-serif;
+    font-size: 32px;
+    margin: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.proximoProyecto img {
+    width: 32px;
+    height: auto;
+    align-items:center;
+}
+
+/* Mobile w<425px */
+@media (max-width: 425px) {
+
+    header{
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 5px;
+    }
+    
+    .logoAndIcons{
+        display: flex;
+        align-items: center;
+        gap:8px;
+    }
+    
+    .socialMedia{
+        display:flex;
+        flex-direction: row;
+        align-items:center;
+        gap: 10px;
+    }
+
+    .navBar ul {
+    flex-direction:row;
+    font-size: 13px;
+    font-weight: bold;
+    gap:15px;
+    }
+
+    .navBar ul li{
+        margin-left:0;
+    }
+
+
+    /* Footer*/
+    footer {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        padding: 3px;
+    }
+
+    .infoEstudio{
+        font-size: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btnHablemos {
+        display: none; 
+    }
+
+    /*Landing*/
+    .sectionImage{
+        background-position: center;
+        background-size:cover;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content:center;
+        width: auto;
+        min-height: auto;
+    }
+
+    .sectionImage h1{
+            font-size: 16px;
+            font-weight: bold;
+            padding: 7px;
+            text-align: center;
+    }
+
+    .sectionImage div a{
+        font-size: 13px;
+        padding: 2px 5px;
+        border: 2px solid white;
+    }
+
+    .divDise{
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .serviciosLanding{
+        align-items: center;
+        flex-direction: row;
+        margin-left: 5px;
+        padding: 5px;
+    }
+
+    .nuestrosServicios{
+        height: auto;
+        padding-top: 15px;
+    }
+
+    .nuestrosServicios a{
+        padding: 2px;
+        width: auto;
+        height: auto;
+        border: 2px solid;
+        font-size: 12px;
+    }
+
+    .enriqueciendoTotal{
+        padding: 16px;
+        flex-direction: column;
+    }
+    
+    .enriqueciendo{
+        padding: 16px;
+    }
+    
+    .enriqueciendo h2{
+        font-size: 16px;
+        margin: 0 0 10px;
+    }
+    
+    .enriqueciendo p{
+        font-size: 12px;
+        justify-content: center;
+    }
+
+    .enriqueciendoTotal div img {
+        margin-top: 10px;
+        max-width: 100%;
+    }
+
+    .botonesPN{
+        gap: 10px;
+        padding: 30px;
+    }
+
+    .botonesPN a{
+        padding: 4px;
+        width: auto;
+        height: auto;
+        border: 1px solid;
+        border-radius: 100px;
+        font-size: 12px;
+    }
+
+    .comprometidos h3{
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .comprometidosParent {
+        flex-direction: column;
+    }
+
+    .comprometidosParent div {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .comprometidosParent img{
+        margin: 0 auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .comprometidosParent div p {
+        font-size: 14px;
+        margin-bottom:20px;
+    }
+
+    /*ServiciosPage*/
+
+    .serviciosDescripcion{
+        padding: 10px;
+    }
+    .serviciosDescripcion p {
+        font-size: 12px;
+        line-height: 1.2;
+    }
+
+    .serviciosIndex {
+        grid-template-columns: 1fr;
+        grid-template-areas:  
+            "Servicios1"
+            "Servicios2"
+            "Servicios3"
+            "Servicios4";
+        margin-bottom: 15px;
+    }
+
+    .serviciosIndex .Servicios1, .Servicios2, .Servicios3, .Servicios4{
+        max-width: 90%;
+        height: auto;
+    }
+
+    .serviciosIndex h2{
+        padding: 5px 10px;
+        font-size: 12px;
+        margin-top: 5px;
+}
+
+    .proximoProyecto{
+    padding: 20px;
+}
+
+    .proximoProyecto a {
+        font-size: 10px;
+        margin: 0px;
+}
+
+    .proximoProyecto img {
+        width: 10px;
+        height: auto;
+        align-items:center;
+}
+}
+
+/* Tablet 426px<w>768px*/
+@media (min-width: 426px) and (max-width: 768px) {
+    /* NavBar*/
+    header{
+        justify-content: center;
+        flex-direction: column;
+        padding: 10 20px;
+    }
+    
+    .logoAndIcons{
+        display: flex;
+        align-items: center;
+        gap:20px;
+    }
+    
+    .socialMedia{
+        display:flex;
+        flex-direction: row;
+        align-items:center;
+        gap: 10px;
+    }
+
+    .navBar ul {
+        font-size: 20px;
+        gap:30px;
+    }
+
+    .navBar ul li{
+        margin-left:0;
+    }
+
+        /* Footer*/
+    footer {
+        padding: 0 3px;
+    }
+    
+    .infoEstudio{
+        font-size: 13px;
+        align-items: center;
+        justify-content: center;
+        }
+    .btnHablemos{
+        padding-bottom: 2px;
+    }
+    .btnHablemos a {
+        font-size: 13px;
+        padding: 5px 20px;
+        border-width: 1px;
+    }
+
+    /*Landing*/
+    
+    .sectionImage{
+        background-position: center;
+        background-size:cover;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        align-items:right;
+        justify-content:center;
+        width: auto;
+        min-height: auto;
+    }
+    
+    .sectionImage h1 {
+        font-size: 20px;
+        text-align:right;
+        padding: 10px;
+    }
+
+    .sectionImage div a{
+        font-size: 16px;
+        padding: 4px 10px;
+        border: 2px solid white;
+    }
+
+    .divDise{
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .serviciosLanding {
+        flex-direction: row;
+        align-items: center;
+        margin-left: 7px;
+        padding: 8px;
+    }
+
+    .nuestrosServicios{
+        height: auto;
+        padding-top: 15px;
+    }
+
+    .nuestrosServicios a{
+        padding: 5px;
+        width: auto;
+        height: auto;
+        border: 2px solid;
+        font-size: 16px;
+    }
+
+    .enriqueciendoTotal {
+        padding: 20px;
+        flex-direction:column-reverse;
+    }
+
+    .enriqueciendo {
+        padding: 20px;
+    }
+
+    .enriqueciendo h2 {
+        font-size: 20px;
+        margin: 20px 0 13px;
+    }
+
+    .enriqueciendo p {
+        font-size: 16px;
+        text-align: justify;
+        padding: 0 10px;
+        justify-content: center;
+    }
+
+    .enriqueciendoTotal div img {
+        margin-top: 20px;
+    }
+    
+    .botonesPN{
+        gap: 10px;
+        padding: 0;
+        padding-top: 30px;
+    }
+
+    .botonesPN a{
+        padding: 8px;
+        width: auto;
+        height: auto;
+        border: 1px solid;
+        border-radius: 100px;
+        font-size: 16px;
+    }
+    
+    .comprometidos h3{
+        font-size: 20px;
+        margin-bottom: 23px;
+    }
+
+    .comprometidosParent {
+        flex-direction: column;
+    }
+
+    .comprometidosParent div {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .comprometidosParent img{
+        margin: 0 auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .comprometidosParent div p {
+        font-size: 16px;
+        margin-bottom:20px;
+    }
+
+/*ServiciosPage*/
+
+    .serviciosDescripcion{
+        padding: 10px;
+    }
+    .serviciosDescripcion p {
+        font-size: 16px;
+        line-height: 1.1;
+    }
+
+    .serviciosIndex {
+        grid-template-columns: 1fr;
+        grid-template-areas:  
+            "Servicios1"
+            "Servicios2"
+            "Servicios3"
+            "Servicios4";
+        margin-bottom: 15px;
+    }
+
+    .serviciosIndex .Servicios1, .Servicios2, .Servicios3, .Servicios4{
+        max-width: 90%;
+        height: auto;
+    }
+
+    .serviciosIndex h2{
+        padding: 5px 10px;
+        font-size: 16px;
+        margin-top: 5px;
+    }
+
+    .proximoProyecto{
+    padding: 20px;
+    }
+
+    .proximoProyecto a {
+        font-size: 14px;
+        margin: 0px;
+    }
+
+    .proximoProyecto img {
+        width: 15px;
+        height: auto;
+        align-items:center;
+    }
+}
+
+/*Desktop w>769px*/
+@media (min-width: 769px) {
+    .enriqueciendoTotal {
+        flex-direction: row;
+    }
+}
