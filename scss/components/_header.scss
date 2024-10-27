@@ -1,0 +1,49 @@
+header {
+  @include flexbox(row, space-between, center);
+  width: 100%;
+  overflow-x: hidden;
+  padding: 0 20px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: map-get($colors, white);
+  z-index: 1000;
+}
+
+.logoAndIcons {
+  @include flexbox(row, null, center);
+  gap: 20px;
+}
+
+.socialMedia {
+  @include flexbox(row, null, center);
+  gap: 10px;
+}
+
+// Navbar
+.navBar {
+  ul {
+    @include flexbox(row, null, center);
+    background-color: map-get($colors, white);
+    color: map-get($colors, black);
+    font-family: "area-normal", sans-serif;
+    font-size: 25px;
+    padding: 0;
+    margin: 0;
+
+    li {
+      list-style: none;
+      margin-left: 20px;
+
+      a {
+        text-decoration: none;
+        color: map-get($colors, black);
+        transition: font-weight 0.3s;
+
+        &:hover {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

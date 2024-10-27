@@ -1,0 +1,53 @@
+$colors: (
+    black: #000,
+    white: #fff
+);
+
+$text-color: (
+    black: #000,
+    white: #fff
+);
+
+$bg-color: (
+    black: #000,
+    white: #fff  
+);
+
+$border-color: (
+    black: #000,
+    white: #fff  
+);
+
+$fonts: (
+    primary: "area-normal",
+    secondary: "area-extended"
+);
+
+%base-text {
+    font-family: "area-normal", sans-serif;
+    font-style: normal;
+    color: map-get($colors,black);
+}
+
+%bold-text {
+    font-weight: bold;
+}
+
+%title {
+    font-family: map-get($fonts, secondary);
+    font-weight: normal;
+    color: map-get($colors,black);
+}
+
+%proximo {
+    font-family: map-get($fonts, secondary);
+    color: map-get($colors,black);
+    font-size: 32px;
+    margin: 20px;
+    text-decoration: none;
+}
+
+%img-responsive {
+    max-width: 100%;
+    height: auto;
+}

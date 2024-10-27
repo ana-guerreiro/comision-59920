@@ -1,0 +1,36 @@
+.projectBackground {
+    background-image: url(../assets/img/diadema-base.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.projectList {
+    background-color: map-get($colors, white);
+    width: 301px;
+    height: 616px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: absolute;
+    justify-content: center;
+    font-size: 30px;
+    font-family:"area-normal",sans-serif;
+    top: 20%;
+    left: 50px;
+    padding: 30px;
+    margin-left: 20px;
+    margin-bottom: 20%;
+
+    ul {
+        list-style: none;
+
+        li a {
+        text-decoration: none;
+        color: map-get($colors, black);
+        display: inline-block;
+        @include hover-scale(1.05);
+        }
+    }
+}

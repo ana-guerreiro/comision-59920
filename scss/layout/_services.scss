@@ -1,0 +1,57 @@
+.bannerServicios {
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+.serviciosDescripcion {
+  text-align: center;
+  margin: 30px;
+  padding: 30px;
+
+  p {
+    @extend %base-text;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: justify;
+    width: 100%;
+    margin: 0 0 20px;
+    line-height: 1.6;
+  }
+}
+
+.serviciosIndex {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 10px;
+  grid-template-areas: 
+    "Servicios1 Servicios2"
+    "Servicios3 Servicios4";
+
+  div {
+    background-color: map-get($colors, white);
+    @include flexbox(column, center, center);
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  h2 {
+    @extend %base-text;
+    font-size: 30px;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: transparent;
+    display: inline-block;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,11 @@
+.btnHablemos {
+    @include flexbox(row, flex-end, center);
+    padding-right: 20px;
+    padding-bottom: 5px;
+
+  
+    a {
+      @include button-style(transparent, map-get($colors, black));
+      font-size: 18px;
+    }
+  }

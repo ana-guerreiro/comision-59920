@@ -1,0 +1,58 @@
+.seccionPrincipal div img {
+    @include centered-img();
+}
+
+.projectDivision {
+    @include flexbox(row, space-between, center);
+    gap: 40px;
+}
+
+.project-info {
+    text-align: left;
+    width: 50%;
+    margin: 40px;
+
+    p {
+        margin: 5px 0;
+        font-family: "area-extended", sans-serif;
+        font-size: 20px;
+        }
+    }
+
+.project-description {
+    box-sizing: border-box;
+    margin: 40px 0 20px;
+    padding: 0 40px;
+
+    p {
+        margin: 10px 0;
+        font-family: "area-normal", sans-serif;
+        font-size: 20px;
+        text-align: justify;
+        margin-left: 0;
+        margin-right: 0;
+        margin: 10px 0;
+    }
+}
+
+.izquierda img {
+    @include centered-img(90%, 0 auto 40px 40px);
+}
+
+.derecha img {
+    @include centered-img(90%, 40px auto 40px 0);
+}
+
+.proximoProyecto, .descrubreS {
+    padding: 40px;
+    text-align: end;
+
+    a {
+        @extend %proximo
+    }
+    img {
+        width: 32px;
+        height: auto;
+        align-items: center;
+    }
+}

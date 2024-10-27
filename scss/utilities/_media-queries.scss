@@ -1,0 +1,420 @@
+@media (max-width: 425px) {
+  header {
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 5px;
+  }
+
+  .logoAndIcons, .socialMedia {
+    @include flexbox(row, null, center);
+    gap: 8px;
+  }
+
+  .navBar ul {
+    flex-direction: row;
+    font-size: 13px;
+    font-weight: bold;
+    gap: 10px;
+  }
+
+  .navBar ul li {
+    margin-left: 0;
+  }
+
+  footer {
+    padding: 0 3px;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+}
+
+  .infoEstudio{
+    font-size: 8px;
+    align-items: center;
+    justify-content: center;
+    }
+
+  .btnHablemos {
+    display: none;
+  }
+
+
+.sectionImage {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include flexbox(column, center, center);
+    width: auto;
+    min-height: auto;
+
+h1 {
+      font-size: 16px;
+      font-weight: bold;
+      padding: 7px;
+      text-align: center;
+    }
+
+    div a {
+      font-size: 13px;
+      padding: 2px 5px;
+      border: 2px solid white;
+    }
+  }
+
+  .divDise {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  .serviciosLanding, .nuestrosServicios {
+    @include flexbox(row, center, center);
+    padding: 5px;
+    margin-left: 5px;
+
+    a {
+      font-size: 12px;
+      padding: 2px;
+      width: auto;
+      height: auto;
+    }
+  }
+
+  .enriqueciendoTotal {
+    padding: 16px;
+    flex-direction: column;
+  }
+
+  .enriqueciendo {
+    padding: 16px;
+
+    h2 {
+      font-size: 16px;
+      margin: 0 0 10px;
+    }
+
+    p {
+      font-size: 12px;
+      justify-content: center;
+    }
+  }
+
+  .enriqueciendoTotal div img {
+    margin-top: 10px;
+    max-width: 100%;
+  }
+
+  .botonesPN {
+    gap: 10px;
+    padding: 30px;
+
+    a {
+      @include button-style(12px, 4px, black);
+      width: auto;
+      height: auto;
+    }
+  }
+
+  .comprometidos h3 {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .comprometidosParent {
+    flex-direction: column;
+
+    div {
+      width: 100%;
+      padding-left: 0;
+
+      p {
+        font-size: 14px;
+        margin-bottom: 20px;
+      }
+    }
+
+    img {
+      margin: 0 auto;
+      padding: 20px 0;
+    }
+  }
+
+  .serviciosDescripcion {
+    padding: 10px;
+
+    p {
+      font-size: 12px;
+      line-height: 1.2;
+    }
+  }
+
+  .serviciosIndex {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "Servicios1"
+      "Servicios2"
+      "Servicios3"
+      "Servicios4";
+    margin-bottom: 15px;
+
+    .Servicios1, .Servicios2, .Servicios3, .Servicios4 {
+      max-width: 90%;
+      height: auto;
+    }
+
+    h2 {
+      padding: 5px 10px;
+      font-size: 12px;
+      margin-top: 5px;
+    }
+  }
+
+  .proximoProyecto {
+    padding: 20px;
+
+    a {
+      font-size: 10px;
+      margin: 0;
+    }
+
+    img {
+      width: 10px;
+      height: auto;
+      align-items: center;
+    }
+  }
+
+  .projectBackground {
+    height: 70vh;
+  }
+
+  .projectList {
+    width: 150px;
+    height: auto;
+    display: flex;
+    margin-left: 20px;
+    font-size: 18px;
+    position: relative;
+    top: 20%;
+    left: 25px;
+    padding: 10px;
+    margin-bottom: 20%;
+  }
+}
+
+// Tablet Styles (426px < w < 768px)
+@media (min-width: 426px) and (max-width: 768px) {
+  header {
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+
+  .logoAndIcons, .socialMedia {
+    @include flexbox(row, null, center);
+    gap: 20px;
+  }
+
+  .navBar ul {
+    font-size: 20px;
+    gap: 30px;
+
+    li {
+      margin-left: 0;
+    }
+  }
+
+  footer {
+    padding: 0 3px;
+
+    .infoEstudio {
+      font-size: 13px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .btnHablemos {
+      padding-bottom: 2px;
+
+      a {
+        font-size: 13px;
+        padding: 5px 20px;
+        border-width: 1px;
+      }
+    }
+  }
+
+  .sectionImage {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include flexbox(column, center, center);
+    width: auto;
+    min-height: auto;
+
+    h1 {
+      font-size: 20px;
+      text-align: right;
+      padding: 10px;
+    }
+
+    div a {
+      font-size: 16px;
+      padding: 4px 10px;
+      border: 2px solid white;
+    }
+  }
+
+  .divDise {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .serviciosLanding {
+    @include flexbox(row, center, center);
+    padding: 8px;
+    margin-left: 7px;
+  }
+
+  .nuestrosServicios {
+    height: auto;
+    padding-top: 15px;
+
+    a {
+      @include button-style(16px, 5px);
+      width: auto;
+      height: auto;
+    }
+  }
+
+  .enriqueciendoTotal {
+    padding: 20px;
+    flex-direction: column-reverse;
+
+    div img {
+      margin-top: 20px;
+    }
+  }
+
+  .enriqueciendo {
+    padding: 20px;
+
+    h2 {
+      font-size: 20px;
+      margin: 20px 0 13px;
+    }
+
+    p {
+      font-size: 16px;
+      text-align: justify;
+      padding: 0 10px;
+      justify-content: center;
+    }
+  }
+
+  .botonesPN {
+    gap: 10px;
+    padding: 30px;
+
+    a {
+      @include button-style(16px, 8px);
+      width: auto;
+      height: auto;
+    }
+  }
+
+  .comprometidos h3 {
+    font-size: 20px;
+    margin-bottom: 23px;
+  }
+
+  .comprometidosParent {
+    flex-direction: column;
+
+    div {
+      width: 100%;
+      padding-left: 0;
+
+      p {
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+    }
+
+    img {
+      margin: 0 auto;
+      padding: 20px 0;
+    }
+  }
+
+  .serviciosDescripcion {
+    padding: 10px;
+
+    p {
+      font-size: 16px;
+      line-height: 1.1;
+    }
+  }
+
+  .serviciosIndex {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "Servicios1"
+      "Servicios2"
+      "Servicios3"
+      "Servicios4";
+    margin-bottom: 15px;
+
+    .Servicios1, .Servicios2, .Servicios3, .Servicios4 {
+      max-width: 90%;
+      height: auto;
+    }
+
+    h2 {
+      padding: 5px 10px;
+      font-size: 16px;
+      margin-top: 5px;
+    }
+  }
+
+  .proximoProyecto {
+    padding: 20px;
+
+    a {
+      font-size: 14px;
+      margin: 0;
+    }
+
+    img {
+      width: 15px;
+      height: auto;
+      align-items: center;
+    }
+  }
+  .projectBackground {
+    height: 70vh;
+  }
+
+  .projectList {
+    width: 200px;
+    height: auto;
+    display: flex;
+    margin-left: 20px;
+    font-size: 18px;
+    position: relative;
+    top: 20%;
+    left: 25px;
+    padding: 10px;
+    margin-bottom: 20%;
+  }
+}
+
+// Desktop Styles (w > 769px)
+@media (min-width: 769px) {
+  .enriqueciendoTotal {
+    flex-direction: row;
+  }
+  .enriqueciendoTotal div img {
+    margin-top: 10px;
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,83 @@
+.bannerEquipo img {
+    @extend %img-responsive;
+}
+
+.equipoLanders,
+.arqCoo,
+.restTeam {
+@include flexbox(row, space-between, flex-start);
+@include container(20px, center, 20px, 40px 0);
+flex-wrap: wrap;
+text-align: center;
+gap: 20px;
+
+h1 {
+    font-size: 40px;
+    font-family: "area-extended", sans-serif;
+}
+
+p {
+    @extend %base-text;
+    font-size: 20px;
+    text-align: justify;
+    width: 70%;
+    margin: 0 auto;}
+}
+
+.arqCoo {
+    article {
+        @include flexbox(column, center, center);
+        width: 45%;
+        box-sizing: border-box;
+        font-family:"area-extended",sans-serif;
+
+    h2 {
+        font-family:"area-extended",sans-serif;
+        font-size: 25px;
+        font-weight: bold;
+        margin: 0;
+}
+
+    p {
+        font-family:"area-extended",sans-serif;
+        font-size: 20px;
+        margin: 0;
+        text-align: center;
+
+}
+
+    img {
+        width: 641px;
+        height: 734px;
+        object-fit: cover;
+        }
+    }
+}
+
+.restTeam {
+    @include container(20px, center, 10px);
+    @include flexbox(row, space-between, flex-start);
+
+    article {
+        @include flexbox(column, center, center);
+        width: 30%;
+        box-sizing: border-box;
+    
+    h2 {
+        font-family:"area-extended",sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    p {
+        font-family:"area-extended",sans-serif;
+        font-size: 20px;
+        text-align: center;
+    }
+    img {
+        width: 641px;
+        height: 734px;
+        object-fit: cover;
+    }
+}
+}
