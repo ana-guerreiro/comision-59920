@@ -1,18 +1,23 @@
 @media (max-width: 425px) {
   header {
     justify-content: center;
-    flex-direction: column;
-    padding: 0 5px;
+    flex-direction: row;
+    padding: 5px;
   }
 
-  .logoAndIcons, .socialMedia {
-    @include flexbox(row, null, center);
+  .logoAndIcons {
+    @include flexbox(column, center, center);
+    gap: 8px;
+  }
+
+  .socialMedia {
+    @include flexbox(row, center, center);
     gap: 8px;
   }
 
   .navBar ul {
-    flex-direction: row;
-    font-size: 13px;
+    flex-direction: column;
+    font-size: 16px;
     font-weight: bold;
     gap: 10px;
   }
@@ -26,17 +31,17 @@
     flex-direction: column;
     height: auto;
     align-items: center;
-}
 
-  .infoEstudio{
-    font-size: 8px;
+    .infoEstudio{
+    font-size: 14px;
     align-items: center;
     justify-content: center;
     }
 
-  .btnHablemos {
+    .btnHablemos {
     display: none;
   }
+}
 
 
 .sectionImage {
@@ -48,32 +53,33 @@
     min-height: auto;
 
 h1 {
-      font-size: 16px;
+      font-size: 24px;
       font-weight: bold;
       padding: 7px;
       text-align: center;
     }
 
     div a {
-      font-size: 13px;
-      padding: 2px 5px;
+      font-size: 16px;
+      padding: 5px 15px;
       border: 2px solid white;
     }
   }
 
   .divDise {
-    font-size: 12px;
+    font-size: 16px;
     padding: 10px;
   }
 
   .serviciosLanding, .nuestrosServicios {
     @include flexbox(row, center, center);
-    padding: 5px;
+    padding: 8px;
     margin-left: 5px;
 
     a {
-      font-size: 12px;
-      padding: 2px;
+      font-size: 16px;
+      padding: 5px 15px;
+      border: 2px solid black;
       width: auto;
       height: auto;
     }
@@ -88,12 +94,12 @@ h1 {
     padding: 16px;
 
     h2 {
-      font-size: 16px;
+      font-size: 20px;
       margin: 0 0 10px;
     }
 
     p {
-      font-size: 12px;
+      font-size: 16px;
       justify-content: center;
     }
   }
@@ -108,14 +114,16 @@ h1 {
     padding: 30px;
 
     a {
-      @include button-style(12px, 4px, black);
+      font-size: 16px;
+      padding: 5px 15px;
+      border: 2px solid black;
       width: auto;
       height: auto;
     }
   }
 
   .comprometidos h3 {
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 20px;
   }
 
@@ -127,7 +135,7 @@ h1 {
       padding-left: 0;
 
       p {
-        font-size: 14px;
+        font-size: 16px;
         margin-bottom: 20px;
       }
     }
@@ -142,7 +150,7 @@ h1 {
     padding: 10px;
 
     p {
-      font-size: 12px;
+      font-size: 16px;
       line-height: 1.2;
     }
   }
@@ -155,24 +163,35 @@ h1 {
       "Servicios3"
       "Servicios4";
     margin-bottom: 15px;
+    gap: 15px;
 
     .Servicios1, .Servicios2, .Servicios3, .Servicios4 {
-      max-width: 90%;
+      width: 100%;
+      max-width: 300px;
+      margin: 0 auto;
+      padding: 10px;
       height: auto;
+
+      img {
+        width: 100%;
+        height: auto;
+        max-width: 280px;
+      }
     }
+  
 
     h2 {
       padding: 5px 10px;
-      font-size: 12px;
+      font-size: 18px;
       margin-top: 5px;
     }
   }
 
-  .proximoProyecto {
+  .proximoProyecto, .descrubreS {
     padding: 20px;
 
     a {
-      font-size: 10px;
+      font-size: 16px;
       margin: 0;
     }
 
@@ -184,22 +203,96 @@ h1 {
   }
 
   .projectBackground {
-    height: 70vh;
+    height: 90vh;
   }
 
   .projectList {
-    width: 150px;
+    width: auto;
     height: auto;
     display: flex;
-    margin-left: 20px;
-    font-size: 18px;
-    position: relative;
-    top: 20%;
-    left: 25px;
-    padding: 10px;
-    margin-bottom: 20%;
+    text-align: center;
+    font-size: 26px;
+    position: absolute;
+    padding: 25px;
+  }
+
+  .seccionPrincipal div img {
+    @include centered-img(90%, 0 auto);
+}
+
+  .projectDivision {
+    @include flexbox(column, center, center);
+    gap: 0px;
+  }
+
+  .project-info {
+    width: 100%;
+    margin: 10px;
+
+    p {
+      font-size: 16px;
+    }
+  }
+
+  .project-description {
+    margin: 0 0 10px;
+    padding: 0 10px;
+
+    p {
+      font-size: 16px;
+      margin: 10px 20px;
+      line-height: 1.6;
+    }
+  }
+
+  .izquierda img, .derecha img {
+    @include centered-img(80%, 20px auto);
+  }
+
+
+  .equipoLanders,
+  .arqCoo,
+  .restTeam {
+      @include flexbox(column, center, center);
+      margin: 0;
+      gap: 0;
+      padding: 0;
+
+      h1 {
+          font-size: 24px;
+      }
+
+      p {
+          font-size: 16px;
+          width: 80%;
+          padding-bottom: 20px;
+          line-height: 1.6;
+      }
+  }
+
+  .equipoLanders h1 {
+    margin-bottom: 10px;
+  }
+  .arqCoo article,
+  .restTeam article {
+      width: 100%;
+      
+      img {
+          width: 100%;
+          height: auto;
+      }
+
+      h2 {
+          font-size: 22px;
+      }
+
+      p {
+          font-size: 16px;
+      }
   }
 }
+
+
 
 // Tablet Styles (426px < w < 768px)
 @media (min-width: 426px) and (max-width: 768px) {
@@ -227,7 +320,7 @@ h1 {
     padding: 0 3px;
 
     .infoEstudio {
-      font-size: 13px;
+      font-size: 16px;
       align-items: center;
       justify-content: center;
     }
@@ -236,7 +329,7 @@ h1 {
       padding-bottom: 2px;
 
       a {
-        font-size: 13px;
+        font-size: 16px;
         padding: 5px 20px;
         border-width: 1px;
       }
@@ -252,7 +345,7 @@ h1 {
     min-height: auto;
 
     h1 {
-      font-size: 20px;
+      font-size: 28px;
       text-align: right;
       padding: 10px;
     }
@@ -265,7 +358,7 @@ h1 {
   }
 
   .divDise {
-    font-size: 16px;
+    font-size: 18px;
     padding: 12px;
   }
 
@@ -299,12 +392,12 @@ h1 {
     padding: 20px;
 
     h2 {
-      font-size: 20px;
+      font-size: 22px;
       margin: 20px 0 13px;
     }
 
     p {
-      font-size: 16px;
+      font-size: 18px;
       text-align: justify;
       padding: 0 10px;
       justify-content: center;
@@ -323,7 +416,7 @@ h1 {
   }
 
   .comprometidos h3 {
-    font-size: 20px;
+    font-size: 24px;
     margin-bottom: 23px;
   }
 
@@ -335,7 +428,7 @@ h1 {
       padding-left: 0;
 
       p {
-        font-size: 16px;
+        font-size: 18px;
         margin-bottom: 20px;
       }
     }
@@ -350,62 +443,130 @@ h1 {
     padding: 10px;
 
     p {
-      font-size: 16px;
+      font-size: 18px;
       line-height: 1.1;
     }
   }
 
   .serviciosIndex {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "Servicios1"
-      "Servicios2"
-      "Servicios3"
-      "Servicios4";
     margin-bottom: 15px;
 
     .Servicios1, .Servicios2, .Servicios3, .Servicios4 {
-      max-width: 90%;
+      width: 100%;
+      max-width: 340px;
+      margin: 0 auto;
+      padding: 10px;
       height: auto;
+
+      img {
+        width: 100%;
+        height: auto;
+        max-width: 3400px;
+      }
     }
 
     h2 {
       padding: 5px 10px;
-      font-size: 16px;
+      font-size: 22px;
       margin-top: 5px;
     }
   }
 
-  .proximoProyecto {
+  .proximoProyecto, .descrubreS{
     padding: 20px;
 
     a {
-      font-size: 14px;
+      font-size: 18px;
       margin: 0;
     }
 
     img {
-      width: 15px;
+      width: 16px;
       height: auto;
       align-items: center;
     }
   }
   .projectBackground {
-    height: 70vh;
+    height: 80vh;
   }
 
   .projectList {
-    width: 200px;
+    width: 300px;
     height: auto;
     display: flex;
     margin-left: 20px;
-    font-size: 18px;
-    position: relative;
-    top: 20%;
+    text-align: center;
+    font-size: 28px;
+    position:absolute;
     left: 25px;
     padding: 10px;
-    margin-bottom: 20%;
   }
+  .projectDivision {
+    @include flexbox(column, center, center);
+    gap: 0px;
+  }
+
+  .project-info {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+
+    p {
+      font-size: 16px;
+    }
+  }
+
+  .project-description {
+    margin: 0 0 10px;
+    padding: 0 10px;
+    width: 100%;
+    box-sizing: border-box;
+
+    p {
+      font-size: 18px;
+      margin: 10px 25px;
+      line-height: 1.6;
+    }
+  }
+
+  .izquierda img, .derecha img {
+    @include centered-img(80%, 25px auto);
+  }
+
+  .equipoLanders,
+    .arqCoo,
+    .restTeam {
+        @include flexbox(column, center, center);
+        gap: 15px;
+
+        h1 {
+            font-size: 28px;
+        }
+
+        p {
+            font-size: 18px;
+            width: 80%;
+        }
+    }
+
+    .arqCoo article,
+    .restTeam article {
+        width: 100%;
+        
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        h2 {
+            font-size: 22px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    }
 }
 
 // Desktop Styles (w > 769px)

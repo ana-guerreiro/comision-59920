@@ -5,15 +5,18 @@
 .projectDivision {
     @include flexbox(row, space-between, center);
     gap: 40px;
+    padding-top: 20px;
 }
 
 .project-info {
-    text-align: left;
     width: 50%;
-    margin: 40px;
+    margin: 20px;
+    box-sizing: border-box;
+    padding: 20px;    
 
     p {
-        margin: 5px 0;
+        margin: 10px;
+        line-height: 1.6;
         font-family: "area-extended", sans-serif;
         font-size: 20px;
         }
@@ -21,26 +24,23 @@
 
 .project-description {
     box-sizing: border-box;
-    margin: 40px 0 20px;
-    padding: 0 40px;
+    padding: 20px;
+
 
     p {
-        margin: 10px 0;
+        margin: 20px;
         font-family: "area-normal", sans-serif;
         font-size: 20px;
         text-align: justify;
-        margin-left: 0;
-        margin-right: 0;
-        margin: 10px 0;
     }
 }
 
 .izquierda img {
-    @include centered-img(90%, 0 auto 40px 40px);
+    @include centered-img(90%, 0 auto 20px);
 }
 
 .derecha img {
-    @include centered-img(90%, 40px auto 40px 0);
+    @include centered-img(90%, 40px auto 20px);
 }
 
 .proximoProyecto, .descrubreS {
